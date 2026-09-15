@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ingestion
+  namespace: vivek
 spec:
   replicas: 1
   selector:
@@ -14,6 +15,6 @@ spec:
     spec:
       containers:
       - name: ingestion
-        image: acr22.azurecr.io/axion-ingestion:v6
+        image: clusteraliregistry.azurecr.io/axion-ingestion:v1
         ports:
         - containerPort: 8000
