@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: ingestion
-        image: clusteraliregistry.azurecr.io/axion-ingestion:v1
+        image: clusteraliregistry.azurecr.io/axion-ingestion:v2
         ports:
         - containerPort: 8000
